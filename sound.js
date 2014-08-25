@@ -22,7 +22,7 @@ newTrack: function(tracknumber){
 		track.isLoaded=true;
 		track.trackSource=null;
 		track.playing=false;
-		track.gainNode=that.audioContext.createGainNode(); // createGain() doesn't work on Safari (deprecated?)
+		track.gainNode=that.audioContext.createGain(); // createGain() doesn't work on Safari (deprecated?)
 		that.tracklist.push(track);
 		track.currentTime=0;
 		});
@@ -45,12 +45,12 @@ play: function(tracknumber){
 	this.tracklist[tracknumber].trackSource=audioSource;
 	audioSource.connect(this.tracklist[tracknumber].gainNode);
 	this.tracklist[tracknumber].gainNode.connect(this.audioContext.destination);
-	this.tracklist[tracknumber].trackSource.noteOn(0,this.tracklist[tracknumber].currentTime);
+	this.tracklist[tracknumber].trackSource.start(0,this.tracklist[tracknumber].currentTime);
 	this.tracklist[tracknumber].currentTime=this.audioContext.currentTime-this.tracklist[tracknumber].currentTime;
 },
 
 pause: function(tracknumber){
-	this.tracklist[tracknumber].trackSource.noteOff(0);
+	this.tracklist[tracknumber].trackSource.stop(0);
 	this.tracklist[tracknumber].currentTime=this.audioContext.currentTime-this.tracklist[tracknumber].currentTime;
 },
 };
