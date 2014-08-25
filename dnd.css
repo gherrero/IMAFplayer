@@ -1,0 +1,259 @@
+body{
+	background:#6C92C5;
+}
+body:after{
+	content: url(img/play.png) url(img/pause.png);
+	display: none;
+}
+div{
+	margin-bottom:7px;
+	padding:15px;
+	position: relative;
+}
+#wrapper{
+	margin:20px auto;
+	max-width:600px;
+	padding:15px;
+	font-family:Raleway;
+	position:relative;
+	font-size: x-small;
+	color:#FFFFFF;
+}
+#fileInfo{
+	padding:2px;
+	margin-left: 5px;
+	float:left;
+	line-height: 15px;
+	height:45px;
+	padding-left:5px;
+	width:455px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color:#BCCDFB;
+	font-size: small;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);	
+    cursor:default;
+}
+#button{
+	background-image: url(img/play.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	width:40px;	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color:#BCCDFB;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.05s;
+    cursor:default;
+}
+#thumbHolder{
+	z-index: 9999;
+	padding: 1px;
+	float:right;
+	text-align:left;
+	margin-left:5px;
+	height:48px;
+	line-height:20px;
+	width:48px;	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color:#BCCDFB;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.05s;
+    cursor:default;
+}
+#thumbHolder:active{
+	left:0;
+	top:0;
+	position:absolute;
+	z-index: 9999;
+	padding: 1px;
+	float:right;
+	text-align:left;
+	margin-left:5px;
+	height:100px;
+	line-height:20px;
+	width:100px;	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color:#BCCDFB;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.05s;
+    cursor:default;
+}
+#button:active{
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+    cursor:default;
+}
+#button:hover{
+	background-image: url(img/play.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #5D7FA9;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+#button:selection{
+    color:#AFCEFB;
+}
+#fileInfo:selection{
+	background-color:Transparent;
+    color:#AFCEFB;
+}
+#textBox{
+	display:block;
+	line-height:100px;
+}
+#timeInfo{
+	margin:auto;
+	padding:0;
+	float:left;
+	font-size:x-large;
+	line-height:40px;
+}
+#lyricsTrack{
+	float:left;
+	font-size: large;
+	text-align:center;
+	height:28px;
+	line-height:28px;
+	width:598px;	
+	margin-bottom: 2px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color:#BCCDFB;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.05s;
+    cursor:default;
+}
+#metaField{
+	float:left;
+	padding:2px;
+	width: 300px;
+}
+.track{
+	float:left;
+	height:50px;
+	width:598px;
+	margin: 1px;
+	padding:0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    position:relative;
+}
+.control{
+	float:left;
+	height:50px;
+	width: 70px;
+	margin:auto;
+	padding:0;
+	border-right:1px solid #20538D;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.volume{
+	float: left;
+	width: 65px;
+}
+.canvasClass{
+	float:left;
+	height:50px;
+	width:527px;
+	position:absolute;	
+}
+.nameDiv{
+	margin: auto;
+	padding: 0;
+	font-size: small;
+	color: #AFCEFB;
+	text-align: center;
+}
+.guideCanvas{
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	width: 527px;	
+}
+.canvasWrap{
+	float:left;
+	position:relative;
+	margin:0;
+	padding:0;
+	height:50px;
+	width:527px;
+}
