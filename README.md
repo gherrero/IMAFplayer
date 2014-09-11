@@ -8,7 +8,7 @@ The IM AF standard allows to include individual tracks, artwork, synchronized ly
 
 Official repository maintained by Dr Panos Kudumakis (QMUL) at [soundsoftware] (http://code.soundsoftware.ac.uk/projects/mpegdevelopments/wiki/MPEG-A)
 
-[Simple demo] (www.giacomoherrero.com/clientside)
+[Simple demo] (http://www.giacomoherrero.com/clientside)
 
 Since this was made some time ago and the Web Audio API has changed since, some things may not work. See a more updated demo by Luke Barlow [here] (http://forkaudio.org/wemix/imaf-rc.html)
 
